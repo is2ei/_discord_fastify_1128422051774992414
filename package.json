@@ -1,0 +1,21 @@
+{
+  "name": "_discord_fastify_1128422051774992414",
+  "version": "1.0.0",
+  "description": "https://discord.com/channels/725613461949906985/767233407683002419/1128422051774992414",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/jwt": "^7.2.0",
+    "fastify": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "typescript": "^5.1.6"
+  }
+}
