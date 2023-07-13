@@ -9,12 +9,15 @@ server.register(fastifyJwt, {
 
 server.post('/signup', (req, reply) => {
   // some code
-  const payload = {}
-  const token = server.jwt.sign({ payload })
+  const payload = { id: 12345 }
+  const token = server.jwt.sign(payload)
   reply.send({ token })
 })
 
 server.get('/ping', async (request, reply) => {
+  server.log.debug(request.user.id)
+  server.log.debug(request.user.age)
+  server.log.debug(request.user.name)
   return 'pong\n'
 })
 
